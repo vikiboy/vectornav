@@ -75,7 +75,12 @@ void asyncDataListener(Vn200* sender, Vn200CompositeData* data)
       gpsFix = "3D Fix";
       break;
     default:
-      gpsFix = "Unknown";
+      gpsFix = "Un     &LLA,
+                          &nedVelocity,
+                          &positionAccuracy,
+                          &speedAccuracy,
+                          &timeAccuracy ); 
+                      known";
   }
   
   // INS Status

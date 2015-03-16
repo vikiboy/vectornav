@@ -39,7 +39,7 @@ if __name__ == '__main__':
   
   global pub
   
-  pub = rospy.Publisher("vectornav/ins/NavSatFix", NavSatFix)
+  pub = rospy.Publisher("/gps/fix", NavSatFix, queue_size=10)
   
 
   rospy.Subscriber("vectornav/ins", ins, subCB)
